@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Main/Appendices/append_calculator.htm'],s:['+','marker'],p:[['+',77],['at',58],['creating',67],['files',64],['launch',3],['on',40],['restrict',34],['the',49],['watch',21]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Main/Appendices/append_calculator.htm'],s:['+','map'],p:[['+',78],['at',56],['creating',63],['file',76],['language',76],['on',3],['resources',26],['the',45],['want',58]]});
