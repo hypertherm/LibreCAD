@@ -378,9 +378,15 @@
                 </div><span id="tripane-iframe-title" class="invisible-label" aria-hidden="true"></span>
                 <div id="contentBodyInner">
                     <!-- frameBorder="0" is for IE 8 and below --><iframe id="topic" class="content" name="topic" frameBorder="0" aria-label="Topic"></iframe><iframe id="pulse" class="content" name="pulse" frameBorder="0" aria-label="Pulse"></iframe>
-                    <div id="searchPane">
-                        <h1 id="results-heading">Your search for <span class="query"></span> returned <span class="total-results"></span> result(s).</h1>
-                        <div id="pagination"><a href="#" class="previousPage">Previous</a><a href="#" class="nextPage">Next</a>
+                    <div id="search-results">
+                        <div id="search-results-flex">
+                            <div id="knowledge-panel">
+                            </div>
+                            <div id="searchPane" data-mc-featured-snippets-view-mode="Truncated" data-mc-knowledge-panel-view-mode="Truncated">
+                                <h1 id="results-heading" data-mc-style="Search Heading">Your search for <span class="query"></span> returned <span class="total-results"></span> result(s).</h1>
+                                <div id="pagination" data-mc-style="Search Pagination"><a class="previousPage" data-mc-style="Search Pagination Item">Previous</a><a class="nextPage" data-mc-style="Search Pagination Item">Next</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

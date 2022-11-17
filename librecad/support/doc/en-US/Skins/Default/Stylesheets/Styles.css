@@ -1037,17 +1037,32 @@ iframe.content
 	height: 100%;
 }
 
+#search-results-flex
+{
+	display: flex;
+	flex-direction: row;
+	margin: 8px;
+	column-gap: 25px;
+}
+
+html[dir='rtl'] #search-results-flex
+{
+	flex-direction: row-reverse;
+}
+
 /* Search */
+
+#knowledge-panel
+{
+	flex: 0 0 auto;
+	width: 26%;
+	order: 1;
+	display: block;
+}
 
 #searchPane
 {
-	margin: 8px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: none;
+	flex: 1 1 auto;
 }
 
 #contentBodyInner
@@ -1632,92 +1647,6 @@ a.activityText
 	width: auto;
 }
 
-.micro-content-container > .micro-content
-{
-	padding: 15px;
-	-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
-	-moz-box-shadow: 0px 1px 4px 0px #cccccc;
-	box-shadow: 0px 1px 4px 0px #cccccc;
-	line-height: normal;
-	overflow-y: auto;
-	margin-bottom: 25px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	background-position: center center;
-}
-
-.micro-content-container > .micro-content > .micro-response
-{
-	overflow: hidden;
-	max-height: 200px;
-}
-
-.micro-content-container > .micro-content > .micro-content-expand
-{
-	width: 100%;
-	border-left: none;
-	border-right: none;
-	cursor: pointer;
-	border-top: solid 1px #b9bec1;
-	border-bottom: solid 1px #b9bec1;
-	height: 40px;
-	background: transparent url('Images/arrow-down.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Default/Stylesheets/Images/arrow-down.png') no-repeat center center;
-}
-
-.micro-content-container > .micro-content > .micro-content-expand.expanded
-{
-	background: transparent url('Images/arrow-up.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Default/Stylesheets/Images/arrow-up.png') no-repeat center center;
-}
-
-.micro-content-container > .micro-content > .micro-content-expand-transition-wrapper
-{
-	position: relative;
-	height: 0px;
-	width: 100%;
-}
-
-.micro-content-container > .micro-content > .micro-content-expand-transition-wrapper > .micro-content-expand-transition
-{
-	position: absolute;
-	bottom: 0px;
-	left: 0;
-	right: 0;
-	height: 50px;
-	background: -moz-linear-gradient(top, transparent 0%, #ffffff 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#ffffff));
-	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
-	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
-	-pie-background: linear-gradient(transparent, #ffffff);
-}
-
-.micro-content-container > .micro-content > .micro-response-title
-{
-	font-size: 16px;
-	font-weight: normal;
-	margin: 10px 0 2px 0;
-	margin-top: 10px;
-	margin-bottom: 2px;
-}
-
-.micro-content-container > .micro-content > .micro-response-title a
-{
-	color: #2200c1;
-	text-decoration: underline;
-}
-
-.micro-content-container > .micro-content > .micro-response-url cite
-{
-	color: #0e774a;
-	font-size: 0.9em;
-	font-style: normal;
-}
-
 .search-account-container
 {
 	position: absolute;
@@ -1852,6 +1781,167 @@ a.activityText
 	background-color: #D5D8DA;
 }
 
+/*   Micro content basic styles   */
+
+.micro-content
+{
+	overflow-y: auto;
+	line-height: normal;
+}
+
+.micro-content-drop-down-button
+{
+	display: none;
+	cursor: pointer;
+}
+
+.micro-content-drop-down-mode .micro-content-drop-down-button
+{
+	display: inline;
+}
+
+.micro-content-drop-down-mode > .micro-content-collapsed > .micro-response,
+.micro-content-drop-down-mode > .micro-content-collapsed > .micro-response-title,
+.micro-content-drop-down-mode > .micro-content-collapsed > .micro-response-url
+{
+	display: none !important;
+}
+
+.micro-content-truncated-mode .micro-response
+{
+	overflow: hidden;
+}
+
+.micro-content-expand
+{
+	display: none;
+	width: 100%;
+	cursor: pointer;
+}
+
+.micro-content-truncated-mode .micro-content-expand
+{
+	display: inline;
+}
+
+.micro-content-truncated-mode .micro-content-expand-transition-wrapper
+{
+	position: relative;
+	height: 0px;
+	width: 100%;
+}
+
+.micro-content-truncated-mode .micro-content-expand-transition
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+}
+
+.micro-content-drop-down-mode .micro-content-phrase
+{
+	cursor: pointer;
+}
+
+.featured-snippets-container .micro-content
+{
+	-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
+	-moz-box-shadow: 0px 1px 4px 0px #cccccc;
+	box-shadow: 0px 1px 4px 0px #cccccc;
+	margin-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-position: center center;
+}
+
+.featured-snippets-container .micro-content-expanded .micro-content-drop-down-button
+{
+	background: transparent url('Images/arrow-up.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/arrow-up.png') no-repeat center center;
+}
+
+.featured-snippets-container .micro-content-collapsed .micro-content-drop-down-button
+{
+	background: transparent url('Images/arrow-down.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/arrow-down.png') no-repeat center center;
+}
+
+.featured-snippets-container .micro-content-expanded .micro-content-expand
+{
+	background: transparent url('Images/arrow-up.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/arrow-up.png') no-repeat center center;
+}
+
+.featured-snippets-container .micro-content-collapsed .micro-content-expand
+{
+	background: transparent url('Images/arrow-down.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/arrow-down.png') no-repeat center center;
+}
+
+.featured-snippets-container.micro-content-truncated-mode .micro-content-expand-transition
+{
+	height: 50px;
+	background: -moz-linear-gradient(top, transparent 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	-pie-background: linear-gradient(transparent, #ffffff);
+}
+
+.knowledge-panel-container .micro-content
+{
+	-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
+	-moz-box-shadow: 0px 1px 4px 0px #cccccc;
+	box-shadow: 0px 1px 4px 0px #cccccc;
+	margin-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-position: center center;
+}
+
+.knowledge-panel-container .micro-content-expanded .micro-content-drop-down-button
+{
+	background: transparent url('Images/arrow-up.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/arrow-up.png') no-repeat center center;
+}
+
+.knowledge-panel-container .micro-content-collapsed .micro-content-drop-down-button
+{
+	background: transparent url('Images/arrow-down.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/arrow-down.png') no-repeat center center;
+}
+
+.knowledge-panel-container .micro-content-expanded .micro-content-expand
+{
+	background: transparent url('Images/arrow-up.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/arrow-up.png') no-repeat center center;
+}
+
+.knowledge-panel-container .micro-content-collapsed .micro-content-expand
+{
+	background: transparent url('Images/arrow-down.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/arrow-down.png') no-repeat center center;
+}
+
+.knowledge-panel-container.micro-content-truncated-mode .micro-content-expand-transition
+{
+	height: 50px;
+	background: -moz-linear-gradient(top, transparent 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	-pie-background: linear-gradient(transparent, #ffffff);
+}
+
 .central-dropdown:hover
 {
 	
@@ -1865,6 +1955,11 @@ a.activityText
 }
 
 .central-account-text:hover
+{
+	
+}
+
+.featured-snippets-container
 {
 	
 }
@@ -1885,6 +1980,112 @@ a.activityText
 .login-dialog-content input[type=text]
 {
 	
+}
+
+.knowledge-panel-container
+{
+	
+}
+
+#knowledge-panel-middle
+{
+	display: none;
+}
+
+.knowledge-panel-container .micro-content-drop-down-button
+{
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	width: 20px;
+	height: 20px;
+}
+
+.knowledge-panel-container .micro-content-phrase span
+{
+	color: #606060;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.knowledge-panel-container .micro-content-phrase
+{
+	
+}
+
+.knowledge-panel-container.micro-content-optional-phrase .micro-content-phrase
+{
+	display: none;
+}
+
+.knowledge-panel-container .micro-response
+{
+	
+}
+
+.knowledge-panel-container.micro-content-truncated-mode .micro-response
+{
+	max-height: none;
+}
+
+.knowledge-panel-container .micro-response-title a
+{
+	color: #2200c1;
+	text-decoration: underline;
+}
+
+.knowledge-panel-container .micro-response-title
+{
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+.knowledge-panel-container .micro-response-title a:visited
+{
+	
+}
+
+.knowledge-panel-container .micro-response-title a:focus
+{
+	
+}
+
+.knowledge-panel-container .micro-response-title a:hover
+{
+	
+}
+
+.knowledge-panel-container .micro-response-title a:active
+{
+	
+}
+
+.knowledge-panel-container .micro-response-url cite
+{
+	color: #0e774a;
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.knowledge-panel-container .micro-response-url
+{
+	
+}
+
+.knowledge-panel-container .micro-content-expand
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-left: none;
+	border-right: none;
+	border-top: solid 1px #b9bec1;
+	border-bottom: solid 1px #b9bec1;
+	height: 40px;
 }
 
 .MCWebHelpFramesetLink a
@@ -2395,28 +2596,100 @@ a.activityText
 	color: #636363;
 }
 
-.micro-content-container > .micro-content > .micro-response-title a:visited
+.featured-snippets-container .micro-content-drop-down-button
+{
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	width: 20px;
+	height: 20px;
+}
+
+.featured-snippets-container .micro-content-phrase span
+{
+	color: #606060;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.featured-snippets-container .micro-content-phrase
+{
+	
+}
+
+.featured-snippets-container.micro-content-optional-phrase .micro-content-phrase
+{
+	display: none;
+}
+
+.featured-snippets-container .micro-response
+{
+	
+}
+
+.featured-snippets-container.micro-content-truncated-mode .micro-response
+{
+	max-height: 200px;
+}
+
+.featured-snippets-container .micro-content-expand
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-left: none;
+	border-right: none;
+	border-top: solid 1px #b9bec1;
+	border-bottom: solid 1px #b9bec1;
+	height: 40px;
+}
+
+.featured-snippets-container .micro-response-title a
 {
 	color: #2200c1;
 	text-decoration: underline;
 }
 
-.micro-content-container > .micro-content > .micro-response-title a:focus
+.featured-snippets-container .micro-response-title
 {
-	color: #2200c1;
-	text-decoration: underline;
+	margin-top: 10px;
+	margin-bottom: 2px;
 }
 
-.micro-content-container > .micro-content > .micro-response-title a:hover
+.featured-snippets-container .micro-response-title a:visited
 {
-	color: #2200c1;
-	text-decoration: underline;
+	
 }
 
-.micro-content-container > .micro-content > .micro-response-title a:active
+.featured-snippets-container .micro-response-title a:focus
 {
-	color: #2200c1;
-	text-decoration: underline;
+	
+}
+
+.featured-snippets-container .micro-response-title a:hover
+{
+	
+}
+
+.featured-snippets-container .micro-response-title a:active
+{
+	
+}
+
+.featured-snippets-container .micro-response-url cite
+{
+	color: #0e774a;
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.featured-snippets-container .micro-response-url
+{
+	
 }
 
 #pagination a#selected
