@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_ProNestFramelessSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,6 +19,11 @@
         <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../Resources/Stylesheets/default.css" rel="stylesheet" type="text/css" />
         <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
         <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
@@ -33,7 +38,7 @@
         </script>
         <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
         </script>
-        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
         </script>
         <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
         </script>
@@ -41,71 +46,152 @@
         </script>
     </head>
     <body>
-        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../Default.htm#Main/Welcome.htm">Open topic with navigation</a>
-        </p>
-        <div>
-            <div role="main" id="mc-main-content">
-                <h1 class="TOC2NoBreakBefore">Welcome to LibreCAD for ProNest</h1>
-                <p>LibreCAD for ProNest is a dynamic CAD editor that is integrated into your Hypertherm nesting software. With LibreCAD, you can easily create or modify geometry, including text, dimensions, and blocks, as well as configure layers, send drawings to ProNest or edit imported parts from ProNest, and more! Use LibreCAD as a standalone CAD editor, or use it to modify drawings before or after they are imported into ProNest.</p>
-                <p>&#160;</p>
-                <p>Get started by visiting one of these pages:</p>
-                <table style="width: 100%;">
-                    <col style="width: 106px;" />
-                    <col />
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;">
-                                <img src="../Images/VidThumbSmall.png" />
-                            </td>
-                            <td style="vertical-align: middle;"><a href="Videos/videos_container.htm">Training and Drawing Walkthrough Videos</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">
-                                <img src="../Images/integPN.png" />
-                            </td>
-                            <td class="Welcome-table"><a href="Getting Started/intro_pronest.htm">ProNest Integration</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">
-                                <img src="../Images/gear.png" />
-                            </td>
-                            <td style="vertical-align: middle;"><a href="Preferences and Customizations/prefs_container.htm">Preferences</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">
-                                <img src="../Images/prefs.png" />
-                            </td>
-                            <td style="vertical-align: middle;"><a href="User Guides/guide_drawingsetup.htm">Drawing Setup</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">
-                                <img src="../Images/tools.png" />
-                            </td>
-                            <td style="vertical-align: middle;"><a href="Tools/tool_container.htm">Tools</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">
-                                <img src="../Images/layers.png" />
-                            </td>
-                            <td style="vertical-align: middle;"><a href="User Guides/guide_layers.htm">Layers</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">
-                                <img src="../Images/dimensions.png" />
-                            </td>
-                            <td style="vertical-align: middle;"><a href="User Guides/guide_dimensions.htm">Dimensions</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo selected" href="#" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1 class="TOC2NoBreakBefore">Welcome to LibreCAD for ProNest</h1>
+                                            <p>LibreCAD for ProNest is a dynamic CAD editor that is integrated into your Hypertherm nesting software. With LibreCAD, you can easily create or modify geometry, including text, dimensions, and blocks, as well as configure layers, send drawings to ProNest or edit imported parts from ProNest, and more! Use LibreCAD as a standalone CAD editor, or use it to modify drawings before or after they are imported into ProNest.</p>
+                                            <p>&#160;</p>
+                                            <p>Get started by visiting one of these pages:</p>
+                                            <table style="width: 100%;">
+                                                <col style="width: 106px;" />
+                                                <col />
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <img src="../Images/VidThumbSmall.png" />
+                                                        </td>
+                                                        <td style="vertical-align: middle;"><a href="Videos/videos_container.htm">Training and Drawing Walkthrough Videos</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <img src="../Images/integPN.png" />
+                                                        </td>
+                                                        <td class="Welcome-table" style="vertical-align: middle;"><a href="Getting Started/intro_pronest.htm">ProNest Integration</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <img src="../Images/gear.png" />
+                                                        </td>
+                                                        <td style="vertical-align: middle;"><a href="Preferences and Customizations/prefs_container.htm">Preferences</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <img src="../Images/prefs.png" />
+                                                        </td>
+                                                        <td style="vertical-align: middle;"><a href="User Guides/guide_drawingsetup.htm">Drawing Setup</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <img src="../Images/tools.png" />
+                                                        </td>
+                                                        <td style="vertical-align: middle;"><a href="Tools/tool_container.htm">Tools</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <img src="../Images/layers.png" />
+                                                        </td>
+                                                        <td style="vertical-align: middle;"><a href="User Guides/guide_layers.htm">Layers</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <img src="../Images/dimensions.png" />
+                                                        </td>
+                                                        <td style="vertical-align: middle;"><a href="User Guides/guide_dimensions.htm">Dimensions</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p style="font-size: 6pt;margin-top: 0;margin-bottom: 0;">&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
             </div>
         </div>
-        <p style="font-size: 6pt;margin-top: 0;margin-bottom: 0;">&#160;</p>
     </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-browse-sequence-path="Command Line" data-mc-toc-path="User Guides" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_ProNestFramelessSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="User Guides" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,50 @@
         <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Resources/Stylesheets/default.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE.htc');
+}
+
+</style>
         <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
         <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
         <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
@@ -33,103 +76,225 @@
         </script>
         <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
         </script>
-        <script src="../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
         </script>
         <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
         </script>
         <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
         </script>
+        <script type="text/javascript" src="../../../Skins/Default/Scripts/TopicToolSkin.js">
+        </script>
     </head>
     <body>
-        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../../Default.htm#Main/User Guides/guide_commandline.htm">Open topic with navigation</a>
-        </p>
-        <div>
-            <div role="main" id="mc-main-content">
-                <h1 class="TOC4"><a name="kanchor63"></a>Using the Command Line</h1>
-                <p>The Command Line offers users an alternative to using the mouse to select tools and draw. Using the keyboard to select tools and enter coordinates can provide greater speed and accuracy when creating drawings. </p>
-                <p>The command line provides other useful features not available using the mouse:</p>
-                <ul>
-                    <li><a href="guide_command_multi.htm">Multi-command input</a>
-                    </li>
-                    <li>A calculator</li>
-                </ul>
-                <p>The command line is displayed in its own dock widget and consists of three components</p>
-                <ol>
-                    <li value="1">Command prompt.</li>
-                    <li value="2">Command output window.</li>
-                    <li value="3">A&#160;button ( <img src="../../Images/button.png" /> ) that displays a drop-down menu that includes:<ul><li>Keycode Mode on/off.</li><li>Load a Command file.</li><li>Paste multiple commands.</li></ul></li>
-                </ol>
-                <p>See the <a href="../Appendices/append_commandline.htm">appendix</a> for a comprehensive list of Command Line commands.</p>
-                <h2 class="Procedure">Entering functions into the Command Line</h2>
-                <p>The commands available to use are shown on the reference pages for each tool category. The command line is activated in a variety of ways:</p>
-                <ul>
-                    <li>Start typing any command (for example, <span class="CodeSnippet">rect</span>) and then select Enter.</li>
-                    <li>Select the Space bar, type any command and then select Enter.</li>
-                    <li>Select Ctrl+M, any command and then select Enter.</li>
-                    <li>Select Shift, any command and then select Enter.</li>
-                    <li>With the Keycode Mode on, type a two letter command (for example, <span class="CodeSnippet">ci</span>). Selecting Enter is not required.</li>
-                    <li>Tab completion can be used in the command line when entering commands. Enter a partial command, such as <span class="CodeSnippet">cir</span>, then select the Tab key. If only one command is possible from the partial command, the full command will display in the text entry field. If more than one command is possible, a list of possible commands will display in the command window.</li>
-                </ul>
-                <p>Depending on the command you're using, additional input may be required in the Command Line or Toolbar.</p>
-                <div class="Tip">
-                    <ul>
-                        <li>The Spacebar may be selected instead of the Enter key when <b>Options</b>&#160;&gt;&#160;<b>Application Preferences</b> &gt;&#160;<b>Defaults</b> &gt;&#160;<b>Evaluate commands when Spacebar is pressed</b> is enabled (which is the default).</li>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
                     </ul>
-                    <ul>
-                        <li>The Keycode Mode permits the use of two letter commands and eliminates the need to select Enter after typing the command.</li>
-                    </ul>
-                    <ul>
-                        <li>Typing <span class="CodeSnippet">c</span> or <span class="CodeSnippet">u</span> followed by Enter can be used instead of typing <span class="CodeSnippet">close</span> or <span class="CodeSnippet">undo</span>.</li>
-                    </ul>
-                </div>
-                <h2 class="Procedure"><a name="RelativeCoordinates"></a>Using relative coordinates</h2>
-                <p>Instead of using absolute coordinates that always use 0,0 as the reference point, you can use relative coordinates. In LibreCAD, relative coordinates set the reference point to the last location you clicked when drawing an entity. Additionally, you can <a href="../Snapping/snapping.htm">set or lock the relative zero</a> to a given location.</p>
-                <p>The relative zero location is indicated by a small red crosshair ( <img src="../../Images/RelativeZeroIndicator.png" /> ).</p>
-                <ol>
-                    <li value="1">Establish a relative zero location in the drawing, by drawing an entity or by manually setting the relative zero point (see <a href="../Snapping/snapping.htm">Snapping</a>).</li>
-                    <li value="2">Enter a drawing mode, such as the draw rectangle mode, that you will use to reference the relative zero point.</li>
-                    <li value="3">Follow prompts in the Command Line, but type an at-symbol (@) before  coordinate values. For example, <span class="CodeSnippet">@1,1</span>.</li>
-                </ol>
-                <div class="Tip">
-                    <p>You can use two periods instead of the at-symbol when entering relative coordinates. For example, <span class="CodeSnippet">1..1</span>.</p>
-                </div>
-                <p class="ImageHolder">
-                    <img src="../../Images/RelativeCoordinateEx.png" />
-                </p>
-                <p style="font-style: italic;">The relative zero point is at the center of the circle, after drawing a Circle by Diameter.</p>
-                <h2 class="Procedure">Using the Command Line Calculator</h2>
-                <ol>
-                    <li value="1">Enter <span class="CodeSnippet">Cal</span> in the Command Line to enable Calculator Mode.</li>
-                    <li value="2">Enter equations as needed. Calculator Mode can also be used to retrieve values, such as pi. Results will display in the command window.</li>
-                    <li value="3">Exit Calculator Mode by again entering <span class="CodeSnippet">Cal</span> in the Command Line.</li>
-                </ol>
-                <p>See the list of <a href="../Appendices/append_calculator.htm">Calculator Operators and Functions</a>.</p>
-                <div class="Note">
-                    <ul>
-                        <li>The constant pi is defined in LibreCAD as 3.14159265359.</li>
-                        <li>Trigonometric functions use radians (radians = degrees*pi/180).</li>
-                    </ul>
-                </div>
-                <div class="TopicFooter">
-                    <div class="MCHelpControl MCHelpControl-Related relatedTopics"><span class="MCHelpControl-RelatedHotSpot_">Related articles</span>
-                        <ul class="MCHelpControlList MCRelatedTopicsControlList">
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Tools/tool_container.htm">About Draw and Modify Tools</a>
-                            </li>
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Appendices/append_calculator.htm">Calculator Operators and Functions</a>
-                            </li>
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Videos/10_CommandLine.htm">Command Line (video)</a>
-                            </li>
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="guide_command_aliases.htm">Command Line Aliases</a>
-                            </li>
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Appendices/append_commandline.htm">Command Line Shortcuts</a>
-                            </li>
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="guide_command_multi.htm">Multi-command input with variable files</a>
-                            </li>
-                        </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolSkin mc-component nocontent" style="mc-topic-toolbar-items: Forward Back RemoveHighlight;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div style="max-width: 1000px;">
+                                        <div role="main" id="mc-main-content"><a name="aanchor66"></a>
+                                            <MadCap:concept term="Article" />
+                                            <h1 class="TOC4"><a name="kanchor63"></a>Using the Command Line</h1>
+                                            <p>The Command Line offers users an alternative to using the mouse to select tools and draw. Using the keyboard to select tools and enter coordinates can provide greater speed and accuracy when creating drawings. </p>
+                                            <p>The command line provides other useful features not available using the mouse:</p>
+                                            <ul>
+                                                <li><a href="guide_command_multi.htm">Multi-command input</a>
+                                                </li>
+                                                <li>A calculator</li>
+                                            </ul>
+                                            <p>The command line is displayed in its own dock widget and consists of three components</p>
+                                            <ol>
+                                                <li value="1">Command prompt.</li>
+                                                <li value="2">Command output window.</li>
+                                                <li value="3">A&#160;button ( <img src="../../Images/button.png" /> ) that displays a drop-down menu that includes:<ul><li>Keycode Mode on/off.</li><li>Load a Command file.</li><li>Paste multiple commands.</li></ul></li>
+                                            </ol>
+                                            <p>See the <a href="../Appendices/append_commandline.htm">appendix</a> for a comprehensive list of Command Line commands.</p>
+                                            <h2 class="Procedure">Entering functions into the Command Line</h2>
+                                            <p>The commands available to use are shown on the reference pages for each tool category. The command line is activated in a variety of ways:</p>
+                                            <ul>
+                                                <li>Start typing any command (for example, <span class="CodeSnippet">rect</span>) and then select Enter.</li>
+                                                <li>Select the Space bar, type any command and then select Enter.</li>
+                                                <li>Select Ctrl+M, any command and then select Enter.</li>
+                                                <li>Select Shift, any command and then select Enter.</li>
+                                                <li>With the Keycode Mode on, type a two letter command (for example, <span class="CodeSnippet">ci</span>). Selecting Enter is not required.</li>
+                                                <li>Tab completion can be used in the command line when entering commands. Enter a partial command, such as <span class="CodeSnippet">cir</span>, then select the Tab key. If only one command is possible from the partial command, the full command will display in the text entry field. If more than one command is possible, a list of possible commands will display in the command window.</li>
+                                            </ul>
+                                            <p>Depending on the command you're using, additional input may be required in the Command Line or Toolbar.</p>
+                                            <div class="Tip">
+                                                <ul>
+                                                    <li>The Spacebar may be selected instead of the Enter key when <b>Options</b>&#160;&gt;&#160;<b>Application Preferences</b> &gt;&#160;<b>Defaults</b> &gt;&#160;<b>Evaluate commands when Spacebar is pressed</b> is enabled (which is the default).</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>The Keycode Mode permits the use of two letter commands and eliminates the need to select Enter after typing the command.</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Typing <span class="CodeSnippet">c</span> or <span class="CodeSnippet">u</span> followed by Enter can be used instead of typing <span class="CodeSnippet">close</span> or <span class="CodeSnippet">undo</span>.</li>
+                                                </ul>
+                                            </div>
+                                            <h2 class="Procedure"><a name="RelativeCoordinates"></a>Using relative coordinates</h2>
+                                            <p>Instead of using absolute coordinates that always use 0,0 as the reference point, you can use relative coordinates. In LibreCAD, relative coordinates set the reference point to the last location you clicked when drawing an entity. Additionally, you can <a href="../Snapping/snapping.htm">set or lock the relative zero</a> to a given location.</p>
+                                            <p>The relative zero location is indicated by a small red crosshair ( <img src="../../Images/RelativeZeroIndicator.png" /> ).</p>
+                                            <ol>
+                                                <li value="1">Establish a relative zero location in the drawing, by drawing an entity or by manually setting the relative zero point (see <a href="../Snapping/snapping.htm">Snapping</a>).</li>
+                                                <li value="2">Enter a drawing mode, such as the draw rectangle mode, that you will use to reference the relative zero point.</li>
+                                                <li value="3">Follow prompts in the Command Line, but type an at-symbol (@) before  coordinate values. For example, <span class="CodeSnippet">@1,1</span>.</li>
+                                            </ol>
+                                            <div class="Tip">
+                                                <p>You can use two periods instead of the at-symbol when entering relative coordinates. For example, <span class="CodeSnippet">1..1</span>.</p>
+                                            </div>
+                                            <p class="ImageHolder">
+                                                <img src="../../Images/RelativeCoordinateEx.png" />
+                                            </p>
+                                            <p style="font-style: italic;">The relative zero point is at the center of the circle, after drawing a Circle by Diameter.</p>
+                                            <h2 class="Procedure">Using the Command Line Calculator</h2>
+                                            <ol>
+                                                <li value="1">Enter <span class="CodeSnippet">Cal</span> in the Command Line to enable Calculator Mode.</li>
+                                                <li value="2">Enter equations as needed. Calculator Mode can also be used to retrieve values, such as pi. Results will display in the command window.</li>
+                                                <li value="3">Exit Calculator Mode by again entering <span class="CodeSnippet">Cal</span> in the Command Line.</li>
+                                            </ol>
+                                            <p>See the list of <a href="../Appendices/append_calculator.htm">Calculator Operators and Functions</a>.</p>
+                                            <div class="Note">
+                                                <ul>
+                                                    <li>The constant pi is defined in LibreCAD as 3.14159265359.</li>
+                                                    <li>Trigonometric functions use radians (radians = degrees*pi/180).</li>
+                                                </ul>
+                                            </div>
+                                            <div class="TopicFooter">
+                                                <div class="MCHelpControl MCHelpControl-Related relatedTopics"><span class="MCHelpControl-RelatedHotSpot_">Related articles</span>
+                                                    <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Tools/tool_container.htm">About Draw and Modify Tools</a>
+                                                        </li>
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Appendices/append_calculator.htm">Calculator Operators and Functions</a>
+                                                        </li>
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Videos/10_CommandLine.htm">Command Line (video)</a>
+                                                        </li>
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="guide_command_aliases.htm">Command Line Aliases</a>
+                                                        </li>
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Appendices/append_commandline.htm">Command Line Shortcuts</a>
+                                                        </li>
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="guide_command_multi.htm">Multi-command input with variable files</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
                 </div>
             </div>
         </div>
-        <p style="font-size: 6pt;margin-top: 0;margin-bottom: 0;">&#160;</p>
     </body>
 </html>
