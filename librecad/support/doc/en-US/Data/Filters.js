@@ -1,1 +1,1 @@
-define({})
+define({'Videos':{c:'Video', cm:'', o:1},'Articles':{c:'Article', cm:'', o:0},})

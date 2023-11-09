@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-browse-sequence-path="Library Browser" data-mc-toc-path="User Guides" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_ProNestFramelessSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="User Guides" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,50 @@
         <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Resources/Stylesheets/default.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE.htc');
+}
+
+</style>
         <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
         <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
         <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
@@ -33,75 +76,197 @@
         </script>
         <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
         </script>
-        <script src="../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
         </script>
         <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
         </script>
         <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
         </script>
+        <script type="text/javascript" src="../../../Skins/Default/Scripts/TopicToolSkin.js">
+        </script>
     </head>
     <body>
-        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../../Default.htm#Main/User Guides/guide_library.htm">Open topic with navigation</a>
-        </p>
-        <div>
-            <div role="main" id="mc-main-content">
-                <h1 class="TOC4"><a name="kanchor36"></a>Using the Library Browser</h1>
-                <p>Additional part libraries can be added for blocks or drawings that you create. Any DXF drawing listed in your Library folders is inserted as a block, which can be exploded into individual geometry.</p>
-                <h2 class="Procedure">Specifying a new library folder</h2>
-                <ol>
-                    <li value="1">Click <b>Options</b>.</li>
-                    <li value="2">Click <b>Application Preferences</b>.</li>
-                    <li value="3">Specify a folder path in the <b>Part Libraries</b> field.</li>
-                </ol>
-                <blockquote>
-                    <div class="ImportantDiv">
-                        <p>Do not place blocks directly in the parent parts library directory. Blocks must be placed in a sub-folder of the parent libraries folder to appear in the Library browser.</p>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Welcome.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                </blockquote>
-                <ol start="4">
-                    <li value="4">Click <b>OK</b>.</li>
-                    <li value="5">Click <b>Refresh</b> from the Library Browser.</li>
-                </ol>
-                <p>The folder you specified in <a href="../Preferences and Customizations/prefs_applicationpreferences.htm">Application Preferences</a> should appear in the Library Browser, along with the standard installed folders and drawings.</p>
-                <h2 class="Procedure">Adding files to your new library folder</h2>
-                <p>Once you have added a new folder to your Library Browser (see steps in the previous section), you can add DXF drawings to that folder:</p>
-                <ul>
-                    <li>Copy and Paste files from the File Explorer on your computer into a sub-folder within the folder you specified in Application Preferences.</li>
-                </ul>
-                <div class="Note">
-                    <p>Files can't be added to the Library Browser from LibreCAD and instead must be added via the File Explorer on your PC.</p>
-                </div>
-                <h2 class="Procedure">Inserting a block from the Library Browser</h2>
-                <ol>
-                    <li value="1">Click the block you want to insert.</li>
-                    <li value="2">Click <b>Insert</b>.</li>
-                    <li value="3">Specify a reference point in the Command Line, or select a point on the drawing.</li>
-                </ol>
-                <p>In this mode, you can insert as many copies of the block as needed. Select the Esc key, or right-click to exit the block insertion mode.</p>
-                <h2 class="Procedure">Removing a user-specified library folder</h2>
-                <ol>
-                    <li value="1">Ensure the folder path is removed from the <b>Part Libraries</b> field in your <b>Application Preferences</b>. </li>
-                    <li value="2">Click <b>Rebuild</b> from the Library Browser.</li>
-                </ol>
-                <p>The folder should no longer appear in your Library Browser.</p>
-                <div class="TopicFooter">
-                    <div class="MCHelpControl MCHelpControl-Related relatedTopics"><span class="MCHelpControl-RelatedHotSpot_">Related articles</span>
-                        <ul class="MCHelpControlList MCRelatedTopicsControlList">
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Preferences and Customizations/prefs_applicationpreferences.htm">Application Preferences</a>
-                            </li>
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Videos/12_Blocks.htm">Blocks (video)</a>
-                            </li>
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Videos/13_LibraryBrowser.htm">Library Browser (video)</a>
-                            </li>
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Toolbars and Widgets/tw_librarybrowserdock.htm">Library Browser dock widget</a>
-                            </li>
-                            <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="guide_blocks.htm">Using Blocks</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolSkin mc-component nocontent" style="mc-topic-toolbar-items: Forward Back RemoveHighlight;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div style="max-width: 1000px;">
+                                        <div role="main" id="mc-main-content"><a name="aanchor35"></a>
+                                            <MadCap:concept term="Article" />
+                                            <h1 class="TOC4"><a name="kanchor36"></a>Using the Library Browser</h1>
+                                            <p>Additional part libraries can be added for blocks or drawings that you create. Any DXF drawing listed in your Library folders is inserted as a block, which can be exploded into individual geometry.</p>
+                                            <h2 class="Procedure">Specifying a new library folder</h2>
+                                            <ol>
+                                                <li value="1">Click <b>Options</b>.</li>
+                                                <li value="2">Click <b>Application Preferences</b>.</li>
+                                                <li value="3">Specify a folder path in the <b>Part Libraries</b> field.</li>
+                                            </ol>
+                                            <blockquote>
+                                                <div class="ImportantDiv">
+                                                    <p>Do not place blocks directly in the parent parts library directory. Blocks must be placed in a sub-folder of the parent libraries folder to appear in the Library browser.</p>
+                                                </div>
+                                            </blockquote>
+                                            <ol start="4">
+                                                <li value="4">Click <b>OK</b>.</li>
+                                                <li value="5">Click <b>Refresh</b> from the Library Browser.</li>
+                                            </ol>
+                                            <p>The folder you specified in <a href="../Preferences and Customizations/prefs_applicationpreferences.htm">Application Preferences</a> should appear in the Library Browser, along with the standard installed folders and drawings.</p>
+                                            <h2 class="Procedure">Adding files to your new library folder</h2>
+                                            <p>Once you have added a new folder to your Library Browser (see steps in the previous section), you can add DXF drawings to that folder:</p>
+                                            <ul>
+                                                <li>Copy and Paste files from the File Explorer on your computer into a sub-folder within the folder you specified in Application Preferences.</li>
+                                            </ul>
+                                            <div class="Note">
+                                                <p>Files can't be added to the Library Browser from LibreCAD and instead must be added via the File Explorer on your PC.</p>
+                                            </div>
+                                            <h2 class="Procedure">Inserting a block from the Library Browser</h2>
+                                            <ol>
+                                                <li value="1">Click the block you want to insert.</li>
+                                                <li value="2">Click <b>Insert</b>.</li>
+                                                <li value="3">Specify a reference point in the Command Line, or select a point on the drawing.</li>
+                                            </ol>
+                                            <p>In this mode, you can insert as many copies of the block as needed. Select the Esc key, or right-click to exit the block insertion mode.</p>
+                                            <h2 class="Procedure">Removing a user-specified library folder</h2>
+                                            <ol>
+                                                <li value="1">Ensure the folder path is removed from the <b>Part Libraries</b> field in your <b>Application Preferences</b>. </li>
+                                                <li value="2">Click <b>Rebuild</b> from the Library Browser.</li>
+                                            </ol>
+                                            <p>The folder should no longer appear in your Library Browser.</p>
+                                            <div class="TopicFooter">
+                                                <div class="MCHelpControl MCHelpControl-Related relatedTopics"><span class="MCHelpControl-RelatedHotSpot_">Related articles</span>
+                                                    <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Preferences and Customizations/prefs_applicationpreferences.htm">Application Preferences</a>
+                                                        </li>
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Videos/12_Blocks.htm">Blocks (video)</a>
+                                                        </li>
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Videos/13_LibraryBrowser.htm">Library Browser (video)</a>
+                                                        </li>
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Toolbars and Widgets/tw_librarybrowserdock.htm">Library Browser dock widget</a>
+                                                        </li>
+                                                        <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="guide_blocks.htm">Using Blocks</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
                 </div>
             </div>
         </div>
-        <p style="font-size: 6pt;margin-top: 0;margin-bottom: 0;">&#160;</p>
     </body>
 </html>

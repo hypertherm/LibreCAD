@@ -105,6 +105,7 @@ p.SettingName
 	font-weight: normal;
 	color: #000080;
 	font-size: 1rem;
+	page-break-after: avoid;
 }
 
 p.SettingNameNoToggle
@@ -117,6 +118,7 @@ p.SettingNameNoToggle
 	font-size: 1rem;
 	margin-bottom: 4px;
 	margin-top: 32px;
+	page-break-after: avoid;
 }
 
 li.SettingName
@@ -306,6 +308,16 @@ p.MediumHeading
 	font-weight: bold;
 }
 
+p.MediumHeadingTOCIndent
+{
+	font-family: 'Segoe UI', sans-serif;
+	margin-bottom: 2px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 22px;
+	font-weight: bold;
+}
+
 MadCap|expandingHead:hover
 {
 	text-decoration: underline;
@@ -440,12 +452,22 @@ MadCap|bodyProxy
 	max-width: 950px;
 }
 
+MadCap|indexProxy
+{
+	mc-output-support: all;
+}
+
+span.SearchHighlight
+{
+	background-color: #ffff66;
+}
+
 @media print
 {
 	h2
 	{
-		font-size: 12pt;
 		mc-heading-level: 0;
+		font-size: 14pt;
 	}
 
 	MadCap|xref.PageRef
@@ -467,7 +489,6 @@ MadCap|bodyProxy
 
 	h1
 	{
-		page-break-before: always;
 		mc-toc-depth: 1;
 		mc-heading-level: 1;
 		color: #696969;
@@ -477,6 +498,7 @@ MadCap|bodyProxy
 		border-bottom-color: #696969;
 		border-bottom: solid 2px #696969;
 		border-bottom-width: 1px;
+		page-break-before: avoid;
 	}
 
 	MadCap|tocProxy
@@ -502,7 +524,6 @@ MadCap|bodyProxy
 		border-bottom-color: #ffffff;
 		color: #000000;
 		font-style: normal;
-		page-break-before: always;
 		text-decoration: none;
 		font-variant: normal;
 	}
@@ -589,6 +610,7 @@ MadCap|bodyProxy
 	body
 	{
 		background-color: #ffffff;
+		page-break-after: always;
 	}
 
 	MadCap|bodyProxy
@@ -703,6 +725,306 @@ MadCap|bodyProxy
 	div.Example
 	{
 		border: solid 1px #b9b9b9;
+		background-color: #f5f5f5;
+	}
+
+	p.PseudoH1
+	{
+		font-size: 18pt;
+	}
+
+	div.ExampleNoIndent
+	{
+		background-color: #f5f5f5;
+	}
+}
+
+@media print2
+{
+	h2
+	{
+		mc-heading-level: 0;
+		font-size: 16pt;
+	}
+
+	MadCap|xref.PageRef
+	{
+		mc-format: '{quote}{para}{quote} on page {page}';
+		text-decoration: none;
+		color: #0000ff;
+	}
+
+	h4
+	{
+		mc-heading-level: 0;
+	}
+
+	h3
+	{
+		mc-heading-level: 0;
+		font-size: 12pt;
+	}
+
+	h1
+	{
+		mc-toc-depth: 1;
+		mc-heading-level: 1;
+		color: #696969;
+		font-weight: normal;
+		font-size: 18pt;
+		font-variant: small-caps;
+		border-bottom-color: #696969;
+		border-bottom: solid 2px #696969;
+		border-bottom-width: 1px;
+		page-break-before: always;
+	}
+
+	MadCap|tocProxy
+	{
+		mc-page-number-format: lower-alpha;
+		border-top-style: none;
+		border-top-color: #ffffff;
+		border-top-width: 0px;
+		mc-output-support: pdf;
+	}
+
+	p.Index1
+	{
+		white-space: pre-wrap;
+	}
+
+	h1.TOC2
+	{
+		mc-heading-level: 2;
+		mc-toc-depth: 2;
+		text-transform: none;
+		border-bottom: solid 0px;
+		border-bottom-color: #ffffff;
+		color: #000000;
+		font-style: normal;
+		text-decoration: none;
+		font-variant: normal;
+		page-break-before: always;
+	}
+
+	h1.TOC2NoBreakBefore
+	{
+		mc-heading-level: 2;
+		page-break-before: avoid;
+		mc-toc-depth: 2;
+		text-transform: none;
+		border-bottom: solid 0px;
+		border-bottom-color: #ffffff;
+		color: #000000;
+		font-style: normal;
+		text-decoration: none;
+		font-variant: normal;
+	}
+
+	h1.TOC3
+	{
+		mc-heading-level: 3;
+		mc-toc-depth: 3;
+		text-transform: none;
+		color: #000000;
+		font-style: normal;
+		border-bottom-width: 0px;
+		border-bottom-color: #ffffff;
+		border-bottom: solid 0px;
+		text-decoration: none;
+		font-variant: normal;
+	}
+
+	h1.TOC3NoBreakBefore
+	{
+		mc-heading-level: 3;
+		page-break-before: avoid;
+		mc-toc-depth: 3;
+		text-transform: none;
+		border-bottom: solid 0px;
+		border-bottom-color: #ffffff;
+		color: #000000;
+		font-style: normal;
+		text-decoration: none;
+		font-variant: normal;
+	}
+
+	h1.TOC4
+	{
+		mc-heading-level: 4;
+		mc-toc-depth: 4;
+		text-transform: none;
+		color: #000000;
+		border-bottom-width: 0px;
+		border-bottom: solid 0px;
+		border-bottom-color: #ffffff;
+		font-style: normal;
+		text-decoration: none;
+		font-variant: normal;
+	}
+
+	h1.TOC5
+	{
+		mc-heading-level: 5;
+		mc-toc-depth: 5;
+		text-transform: none;
+		color: #000000;
+		font-style: normal;
+		border-bottom: solid 0px;
+		border-bottom-color: #ffffff;
+		text-decoration: none;
+		font-variant: normal;
+	}
+
+	h5
+	{
+		mc-heading-level: 0;
+	}
+
+	h6
+	{
+		mc-heading-level: 0;
+	}
+
+	body
+	{
+		background-color: #ffffff;
+		page-break-after: always;
+	}
+
+	MadCap|bodyProxy
+	{
+		
+	}
+
+	MadCap|bodyProxy.MMKS_A4
+	{
+		mc-printer-page-size: A4;
+	}
+
+	MadCap|bodyProxy.MMKS_Letter
+	{
+		mc-printer-page-size: letter;
+		mc-page-number-format: ;
+	}
+
+	a
+	{
+		text-decoration: none;
+	}
+
+	table.Tip
+	{
+		border-top-color: #000000;
+		border-right-color: #000000;
+		border: solid 1px #000000;
+		margin-bottom: 4px;
+		margin-top: 4px;
+	}
+
+	a:visited
+	{
+		text-decoration: none;
+	}
+
+	a:link
+	{
+		text-decoration: none;
+	}
+
+	table
+	{
+		margin-top: 12pt;
+		margin-bottom: 12pt;
+	}
+
+	MadCap|footnote
+	{
+		font-size: 8pt;
+	}
+
+	MadCap|indexProxy
+	{
+		border-top-style: none;
+		border-top-width: 0px;
+		border-top-color: #ffffff;
+		mc-column-count: 2;
+		font-family: Tahoma;
+		font-size: 7pt;
+	}
+
+	p.TOC1
+	{
+		text-transform: uppercase;
+		padding-top: 8px;
+		font-weight: bold;
+		font-size: 9pt;
+		mc-leader-align: inherit;
+		mc-leader-offset: 10pt;
+		mc-auto-number-position: inside-head;
+	}
+
+	p.TOC2
+	{
+		
+	}
+
+	p.TOC3
+	{
+		
+	}
+
+	p.ImageCaption
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|miniTocProxy
+	{
+		page-break-after: always;
+		border-top-width: 1px;
+		border-top-style: none;
+	}
+
+	p.MiniTOC1
+	{
+		font-weight: normal;
+	}
+
+	p.SettingHeader
+	{
+		font-family: 'Segoe UI Semibold';
+	}
+
+	img
+	{
+		max-width: 7in;
+	}
+
+	div.Example
+	{
+		border: solid 1px #b9b9b9;
+		background-color: #f5f5f5;
+	}
+
+	code
+	{
+		background-color: transparent;
+	}
+
+	p.PseudoH1
+	{
+		font-size: 18pt;
+	}
+
+	p.GroupCenteredTOCHeadLVL
+	{
+		mc-heading-level: 1;
+	}
+
+	div.ExampleNoIndent
+	{
+		background-color: #f5f5f5;
 	}
 }
 
@@ -731,16 +1053,6 @@ MadCap|bodyProxy
 	MadCap|xref:visited
 	{
 		color: #7f007f;
-	}
-
-	kbd
-	{
-		border-radius: 3px;
-		border: solid 1px #dcdcdc;
-		padding: 4px;
-		background-color: #333;
-		color: #ffffff;
-		font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 	}
 
 	a
@@ -964,9 +1276,7 @@ div.Tip
 div.Note
 {
 	background-repeat: no-repeat;
-	padding-top: 4px;
 	border: solid 1px #bbc6ce;
-	padding: 6px;
 	padding-left: 22px;
 	text-indent: 0px;
 	margin-bottom: 8px;
@@ -1050,6 +1360,17 @@ p.GroupCentered
 	font-size: 1.15rem;
 }
 
+p.GroupCenteredTOCHeadLVL
+{
+	color: #808080;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	font-weight: normal;
+	font-size: 1.15rem;
+}
+
 div.SettingBody
 {
 	padding-left: 14px;
@@ -1080,16 +1401,6 @@ a
 	color: #0066cc;
 }
 
-kbd
-{
-	border-radius: 3px;
-	border: solid 1px #dcdcdc;
-	padding: 4px;
-	background-color: #333;
-	color: #ffffff;
-	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
 MadCap|xref:visited
 {
 	color: #7f007f;
@@ -1115,7 +1426,7 @@ h2
 	
 }
 
-@media only screen and (max-width: 900px)
+@media only screen and (max-width: 950px)
 {
 	div.RowClassMenu > div:nth-child(1)
 	{
@@ -1130,7 +1441,7 @@ h2
 	}
 }
 
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 700px)
 {
 	div.RowClassMenu > div:nth-child(1)
 	{
@@ -1168,10 +1479,74 @@ p.PseudoH1
 	font-size: 1.7rem;
 }
 
-td.Welcome-table
+span.SearchHighlight1
 {
-	font-family: 'Segoe UI', sans-serif;
-	font-size: 0.9rem;
-	vertical-align: middle;
+	color: #000000;
+	background-color: #ffff66;
+}
+
+span.SearchHighlight10
+{
+	color: #ffffff;
+	background-color: #990099;
+}
+
+span.SearchHighlight2
+{
+	color: #000000;
+	background-color: #a0ffff;
+}
+
+span.SearchHighlight3
+{
+	color: #000000;
+	background-color: #99ff99;
+}
+
+span.SearchHighlight4
+{
+	color: #000000;
+	background-color: #ff9999;
+}
+
+span.SearchHighlight5
+{
+	color: #000000;
+	background-color: #ff66ff;
+}
+
+span.SearchHighlight6
+{
+	color: #ffffff;
+	background-color: #880000;
+}
+
+span.SearchHighlight7
+{
+	color: #ffffff;
+	background-color: #00aa00;
+}
+
+span.SearchHighlight8
+{
+	color: #ffffff;
+	background-color: #886800;
+}
+
+span.SearchHighlight9
+{
+	color: #ffffff;
+	background-color: #004699;
+}
+
+div.wndivider
+{
+	border-top: dotted 2px #dcdcdc;
+	margin-top: 12px;
+}
+
+div.anopagebreak
+{
+	page-break-inside: avoid;
 }
 
