@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_ProNestFramelessSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Getting Started" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_LibreCADFramelessSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Getting Started" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
         <link rel="apple-touch-icon" sizes="180x180" href="../../../Skins/Favicons/apple-touch-icon.png" />
@@ -82,6 +81,18 @@
         </script>
         <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
         </script>
+        <script>/*<![CDATA[*/            !(function (cfg){function e(){cfg.onInit&&cfg.onInit(n)}var x,w,D,t,E,n,C=window,O=document,b=C.location,q="script",I="ingestionendpoint",L="disableExceptionTracking",j="ai.device.";"instrumentationKey"[x="toLowerCase"](),w="crossOrigin",D="POST",t="appInsightsSDK",E=cfg.name||"appInsights",(cfg.name||C[t])&&(C[t]=E),n=C[E]||function(g){var f=!1,m=!1,h={initialize:!0,queue:[],sv:"8",version:2,config:g};function v(e,t){var n={},i="Browser";function a(e){e=""+e;return 1===e.length?"0"+e:e}return n[j+"id"]=i[x](),n[j+"type"]=i,n["ai.operation.name"]=b&&b.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(h.sv||h.version),{time:(i=new Date).getUTCFullYear()+"-"+a(1+i.getUTCMonth())+"-"+a(i.getUTCDate())+"T"+a(i.getUTCHours())+":"+a(i.getUTCMinutes())+":"+a(i.getUTCSeconds())+"."+(i.getUTCMilliseconds()/1e3).toFixed(3).slice(2,5)+"Z",iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}},ver:undefined,seq:"1",aiDataContract:undefined}}var n,i,t,a,y=-1,T=0,S=["js.monitor.azure.com","js.cdn.applicationinsights.io","js.cdn.monitor.azure.com","js0.cdn.applicationinsights.io","js0.cdn.monitor.azure.com","js2.cdn.applicationinsights.io","js2.cdn.monitor.azure.com","az416426.vo.msecnd.net"],o=g.url||cfg.src,r=function(){return s(o,null)};function s(d,t){if((n=navigator)&&(~(n=(n.userAgent||"").toLowerCase()).indexOf("msie")||~n.indexOf("trident/"))&&~d.indexOf("ai.3")&&(d=d.replace(/(\/)(ai\.3\.)([^\d]*)$/,function(e,t,n){return t+"ai.2"+n})),!1!==cfg.cr)for(var e=0;e<S.length;e++)if(0<d.indexOf(S[e])){y=e;break}var n,i=function(e){var a,t,n,i,o,r,s,c,u,l;h.queue=[],m||(0<=y&&T+1<S.length?(a=(y+T+1)%S.length,p(d.replace(/^(.*\/\/)([\w\.]*)(\/.*)$/,function(e,t,n,i){return t+S[a]+i})),T+=1):(f=m=!0,s=d,!0!==cfg.dle&&(c=(t=function(){var e,t={},n=g.connectionString;if(n)for(var i=n.split(";"),a=0;a<i.length;a++){var o=i[a].split("=");2===o.length&&(t[o[0][x]()]=o[1])}return t[I]||(e=(n=t.endpointsuffix)?t.location:null,t[I]="https://"+(e?e+".":"")+"dc."+(n||"services.visualstudio.com")),t}()).instrumentationkey||g.instrumentationKey||"",t=(t=(t=t[I])&&"/"===t.slice(-1)?t.slice(0,-1):t)?t+"/v2/track":g.endpointUrl,t=g.userOverrideEndpointUrl||t,(n=[]).push((i="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",o=s,u=t,(l=(r=v(c,"Exception")).data).baseType="ExceptionData",l.baseData.exceptions=[{typeName:"SDKLoadFailed",message:i.replace(/\./g,"-"),hasFullStack:!1,stack:i+"\nSnippet failed to load ["+o+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(b&&b.pathname||"_unknown_")+"\nEndpoint: "+u,parsedStack:[]}],r)),n.push((l=s,i=t,(u=(o=v(c,"Message")).data).baseType="MessageData",(r=u.baseData).message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+l+")").replace(/\"/g,"")+'"',r.properties={endpoint:i},o)),s=n,c=t,JSON&&((u=C.fetch)&&!cfg.useXhr?u(c,{method:D,body:JSON.stringify(s),mode:"cors"}):XMLHttpRequest&&((l=new XMLHttpRequest).open(D,c),l.setRequestHeader("Content-type","application/json"),l.send(JSON.stringify(s)))))))},a=function(e,t){m||setTimeout(function(){!t&&h.core||i()},500),f=!1},p=function(e){var n=O.createElement(q),e=(n.src=e,t&&(n.integrity=t),n.setAttribute("data-ai-name",E),cfg[w]);return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=a,n.onerror=i,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||a(0,t)},cfg.ld&&cfg.ld<0?O.getElementsByTagName("head")[0].appendChild(n):setTimeout(function(){O.getElementsByTagName(q)[0].parentNode.appendChild(n)},cfg.ld||0),n};p(d)}cfg.sri&&(n=o.match(/^((http[s]?:\/\/.*\/)\w+(\.\d+){1,5})\.(([\w]+\.){0,2}js)$/))&&6===n.length?(d="".concat(n[1],".integrity.json"),i="@".concat(n[4]),l=window.fetch,t=function(e){if(!e.ext||!e.ext[i]||!e.ext[i].file)throw Error("Error Loading JSON response");var t=e.ext[i].integrity||null;s(o=n[2]+e.ext[i].file,t)},l&&!cfg.useXhr?l(d,{method:"GET",mode:"cors"}).then(function(e){return e.json()["catch"](function(){return{}})}).then(t)["catch"](r):XMLHttpRequest&&((a=new XMLHttpRequest).open("GET",d),a.onreadystatechange=function(){if(a.readyState===XMLHttpRequest.DONE)if(200===a.status)try{t(JSON.parse(a.responseText))}catch(e){r()}else r()},a.send())):o&&r();try{h.cookie=O.cookie}catch(k){}function e(e){for(;e.length;)!function(t){h[t]=function(){var e=arguments;f||h.queue.push(function(){h[t].apply(h,e)})}}(e.pop())}var c,u,l="track",d="TrackPage",p="TrackEvent",l=(e([l+"Event",l+"PageView",l+"Exception",l+"Trace",l+"DependencyData",l+"Metric",l+"PageViewPerformance","start"+d,"stop"+d,"start"+p,"stop"+p,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),h.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4},(g.extensionConfig||{}).ApplicationInsightsAnalytics||{});return!0!==g[L]&&!0!==l[L]&&(e(["_"+(c="onerror")]),u=C[c],C[c]=function(e,t,n,i,a){var o=u&&u(e,t,n,i,a);return!0!==o&&h["_"+c]({message:e,url:t,lineNumber:n,columnNumber:i,error:a,evt:C.event}),o},g.autoExceptionInstrumented=!0),h}(cfg.cfg),(C[E]=n).queue&&0===n.queue.length?(n.queue.push(e),n.trackPageView({})):e();})({
+			src: "https://js.monitor.azure.com/scripts/b/ai.3.gbl.min.js",
+			// name: "appInsights", // Global SDK Instance name defaults to "appInsights" when not supplied
+			// ld: 0, // Defines the load delay (in ms) before attempting to load the sdk. -1 = block page load and add to head. (default) = 0ms load after timeout,
+			// useXhr: 1, // Use XHR instead of fetch to report failures (if available),
+			// dle: true, // Prevent the SDK from reporting load failure log
+			crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
+			// onInit: null, // Once the application insights instance has loaded and initialized this callback function will be called with 1 argument -- the sdk instance (DON'T ADD anything to the sdk.queue -- As they won't get called)
+			// sri: false, // Custom optional value to specify whether fetching the snippet from integrity file and do integrity check
+			cfg: { // Application Insights Configuration
+			connectionString: "InstrumentationKey=6b9d86cd-ce5a-4689-b4f7-82135a45ab9f;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=c3724abb-38e6-4cbe-8de5-a1f6f40e32b8"
+		}});/*]]>*/</script>
         <script type="text/javascript" src="../../../Skins/Default/Scripts/TopicToolSkin.js">
         </script>
     </head>
@@ -93,8 +104,8 @@
                     </ul>
                 </aside>
                 <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
-                    <div>
-                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
                             <div class="middle title-bar-section outer-row clearfix">
                                 <div class="menu-icon-container relative clearfix">
                                     <div class="central-account-wrapper">
@@ -162,7 +173,7 @@
                             </nav>
                             <div class="body-container">
                                 <div data-mc-content-body="True">
-                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolSkin mc-component nocontent" style="mc-topic-toolbar-items: Forward Back RemoveHighlight;">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolSkin mc-component nocontent" style="mc-topic-toolbar-items: Forward Back RemoveHighlight Print;">
                                         <div class="button-group-container-left">
                                             <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
                                                 <div>
@@ -202,61 +213,60 @@
                                         </div>
                                     </div>
                                     <div style="max-width: 1000px;">
-                                        <div role="main" id="mc-main-content"><a name="aanchor79"></a>
-                                            <MadCap:concept term="Article" />
+                                        <div role="main" id="mc-main-content">
                                             <h1 class="TOC4">Mouse and keyboard controls, zooming, and panning</h1>
-                                            <h2><a name="kanchor73"></a><a name="kanchor74"></a>Mouse controls</h2>
-                                            <h3>Select an entity</h3>
+                                            <h2><a name="kanchor75"></a><a name="kanchor76"></a>Mouse controls</h2>
+                                            <h2 class="Procedure">Select an entity</h2>
                                             <p>Click on an entity once to select it.</p>
-                                            <h3>Select multiple entities</h3>
+                                            <h2 class="Procedure">Select multiple entities</h2>
                                             <p>Click multiple entities to select them. You do not need to hold down any additional keys.</p>
-                                            <h3>Select all entities in the drawing</h3>
+                                            <h2 class="Procedure">Select all entities in the drawing</h2>
                                             <p>Once an entity is selected, click that entity again to deselect it.</p>
-                                            <h3>Zoom to the extents of the drawing</h3>
+                                            <h2 class="Procedure">Zoom to the extents of the drawing</h2>
                                             <p>Double-click the scroll wheel to automatically zoom to the extents of the drawing.</p>
-                                            <h3>Open a menu of recently used tools</h3>
+                                            <h2 class="Procedure">Open a menu of recently used tools</h2>
                                             <p>Right-click in the drawing area to open a menu of the 15 most recently used tools.</p>
                                             <h2>Keyboard controls</h2>
-                                            <h3>Select all entities in the drawing</h3>
+                                            <h2 class="Procedure">Select all entities in the drawing</h2>
                                             <p>Select Ctrl+A to select all entities in the drawing.</p>
-                                            <h3>Deselect all entities</h3>
+                                            <h2 class="Procedure">Deselect all entities</h2>
                                             <p>To deselect all selected entities, do either of the following:</p>
                                             <ul>
                                                 <li>Select Esc.</li>
                                                 <li>Select Ctrl+K.</li>
                                             </ul>
-                                            <h3><a name="kanchor75"></a>Toggle snap options on/off</h3>
+                                            <h2 class="Procedure"><a name="kanchor77"></a>Toggle snap options on/off</h2>
                                             <p>Select the Spacebar to toggle your snap options on/off. If this isn't working, check your <a href="../Preferences and Customizations/prefs_applicationpreferences.htm#Keyboard">Application Preferences</a>.</p>
-                                            <h3><a name="kanchor76"></a>Enter commands in the Command Line</h3>
+                                            <h2 class="Procedure"><a name="kanchor78"></a>Enter commands in the Command Line</h2>
                                             <p>From the main drawing screen, you can begin typing, which will automatically populate in the Command Line, without having to click in the text field first.</p>
-                                            <h3>Scroll vertically in the drawing</h3>
+                                            <p class="Procedure">Scroll vertically in the drawing</p>
                                             <p>To scroll up or down in your drawing without relying on zooming, do either of the following:</p>
                                             <ul>
                                                 <li>Hold down the Ctrl key while using the scroll bar</li>
                                                 <li>Use the scroll bar.</li>
                                             </ul>
-                                            <h3>Scroll horizontally in the drawing</h3>
+                                            <h2 class="Procedure">Scroll horizontally in the drawing</h2>
                                             <p>To scroll to the left or right in your drawing without relying on zooming, do either of the following:</p>
                                             <ul>
                                                 <li>Hold down the Shift key while using the scroll bar</li>
                                                 <li>Use the scroll bar.</li>
                                             </ul>
-                                            <h3>Exit out of a tool mode</h3>
+                                            <p class="Procedure">Exit out of a tool mode</p>
                                             <p>Select Esc to exit out of any tool mode.</p>
-                                            <h3>Open the LibreCAD Help</h3>
+                                            <h2 class="Procedure">Open the LibreCAD Help</h2>
                                             <p>Select F1 to open context-sensitive help.</p>
-                                            <h3>View all Command Line commands</h3>
+                                            <p class="Procedure">View all Command Line commands</p>
                                             <p>From the main drawing area, select Tab to return a list of all available commands for the Command Line.</p>
-                                            <h3>Toggle full screen mode</h3>
+                                            <h2 class="Procedure">Toggle full screen mode</h2>
                                             <p>Select F11 to enter/exit full screen mode.</p>
-                                            <h3>Zooming</h3>
+                                            <h2 class="Procedure">Zooming</h2>
                                             <p>You can zoom in or out of a drawing by doing either of the following:</p>
                                             <ul>
                                                 <li>Use the scroll wheel on your mouse.</li>
                                                 <li>Click the <b>Zoom In</b> ( <img src="../../Images/zoom_in.svg" /> ), <b>Zoom Out</b> ( <img src="../../Images/zoom_out.svg" /> ), or <b>Auto Zoom</b> ( <img src="../../Images/zoom_auto.svg" /> ) buttons, which are located below the main menu buttons at the top of the screen.</li>
                                             </ul>
                                             <p>Additional options for zooming  can be configured in the <a href="../Preferences and Customizations/prefs_applicationpreferences.htm#Program">Application Preferences</a>.</p>
-                                            <h3>Panning</h3>
+                                            <h2 class="Procedure">Panning</h2>
                                             <p>You can pan, or move the drawing screen around, by doing either of the following:</p>
                                             <ul>
                                                 <li>Hold down the scroll wheel so that it clicks, and drag the mouse to move the screen.</li>

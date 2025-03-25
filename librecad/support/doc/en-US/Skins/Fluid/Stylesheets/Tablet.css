@@ -1,6 +1,6 @@
 /*<meta />*/
 
-@media only screen and (max-width: 950px)
+@media only screen and (max-width: 1279px)
 {
 	/* OffCanvas styles */
 
@@ -86,8 +86,8 @@
 		margin: 0;
 		width: 157px;
 		height: 43px;
-		background: transparent url('Images/librecadforProNestHeader.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/librecadforProNestHeader.png') no-repeat center center;
+		background: transparent url('Images/_645259008.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/_645259008.png') no-repeat center center;
 	}
 
 	.title-bar .menu-icon span
@@ -437,7 +437,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -586,7 +586,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -713,7 +713,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -840,7 +840,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -1246,7 +1246,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 

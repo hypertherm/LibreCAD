@@ -19,9 +19,11 @@
 
 	/* Header Style */
 
-	.title-bar-container
+	nav.title-bar
 	{
 		display: none;
+		background: #d1d3d4 url('Images/BannerHexagonsSingleLine.png') no-repeat center top;
+		-pie-background: #d1d3d4 url('Skins/Fluid/Stylesheets/Images/BannerHexagonsSingleLine.png') no-repeat center top;
 	}
 
 	/* Side Navigation Menu styles */
@@ -35,7 +37,7 @@
 		background: -webkit-linear-gradient(top, #f5f5f5 0%, transparent 100%);
 		background: -o-linear-gradient(top, #f5f5f5 0%,transparent 100%);
 		background: -ms-linear-gradient(top, #f5f5f5 0%,transparent 100%);
-		background: linear-gradient(top, #f5f5f5 0%,transparent 100%);
+		background: linear-gradient(#f5f5f5 0%,transparent 100%);
 		-pie-background: linear-gradient(#f5f5f5, transparent);
 		background-position: top center;
 	}
@@ -292,12 +294,6 @@
 		
 	}
 
-	nav.title-bar
-	{
-		background: #d1d3d4 url('Images/BannerHexagonsSingleLine.png') no-repeat center top;
-		-pie-background: #d1d3d4 url('Skins/Fluid/Stylesheets/Images/BannerHexagonsSingleLine.png') no-repeat center top;
-	}
-
 	.off-canvas-wrapper-inner nav.title-bar .outer-row
 	{
 		
@@ -411,7 +407,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -422,8 +418,8 @@
 
 	.title-bar-layout a.logo
 	{
-		background: transparent url('Images/librecadforProNestHeader.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/librecadforProNestHeader.png') no-repeat center center;
+		background: transparent url('Images/_645259008.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/_645259008.png') no-repeat center center;
 	}
 
 	.main-section > .outer-row
@@ -539,7 +535,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -646,7 +642,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -753,7 +749,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -1039,7 +1035,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 		background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 		background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-		background: linear-gradient(top, transparent 0%,#ffffff 100%);
+		background: linear-gradient(transparent 0%,#ffffff 100%);
 		-pie-background: linear-gradient(transparent, #ffffff);
 	}
 
@@ -1143,7 +1139,7 @@
 		background: -webkit-linear-gradient(top, #f5f5f5 0%, transparent 100%);
 		background: -o-linear-gradient(top, #f5f5f5 0%,transparent 100%);
 		background: -ms-linear-gradient(top, #f5f5f5 0%,transparent 100%);
-		background: linear-gradient(top, #f5f5f5 0%,transparent 100%);
+		background: linear-gradient(#f5f5f5 0%,transparent 100%);
 		-pie-background: linear-gradient(#f5f5f5, transparent);
 	}
 

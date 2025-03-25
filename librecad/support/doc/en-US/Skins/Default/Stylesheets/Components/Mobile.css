@@ -1,6 +1,6 @@
 /*<meta />*/
 
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 767px)
 {
 	.search-bar
 	{
@@ -26,7 +26,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}
@@ -55,7 +55,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}
@@ -69,7 +69,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}
@@ -83,7 +83,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}
@@ -97,7 +97,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}
@@ -111,7 +111,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}
@@ -125,7 +125,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}
@@ -139,7 +139,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}
@@ -153,7 +153,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}
@@ -167,7 +167,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}
@@ -181,7 +181,7 @@
 		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(transparent 0%,transparent 100%);
 		-pie-background: linear-gradient(transparent, transparent);
 		background-position: center center;
 	}

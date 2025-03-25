@@ -462,6 +462,34 @@ span.SearchHighlight
 	background-color: #ffff66;
 }
 
+code
+{
+	background-color: #e4e6e8;
+	border-radius: 3px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 1px;
+	padding-bottom: 0px;
+	font-size: 0.85 rem;
+}
+
+div.code
+{
+	background-color: #efefef;
+	padding: 10px;
+	margin: 10px auto;
+	position: relative;
+	overflow-x: auto;
+}
+
+pre + button
+{
+	position: absolute;
+	align: right;
+	top: 0;
+	right: 0;
+}
+
 @media print
 {
 	h2
@@ -1426,7 +1454,7 @@ h2
 	
 }
 
-@media only screen and (max-width: 950px)
+@media only screen and (max-width: 1279px)
 {
 	div.RowClassMenu > div:nth-child(1)
 	{
@@ -1441,7 +1469,7 @@ h2
 	}
 }
 
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 767px)
 {
 	div.RowClassMenu > div:nth-child(1)
 	{

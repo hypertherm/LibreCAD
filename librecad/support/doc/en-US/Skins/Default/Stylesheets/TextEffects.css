@@ -593,7 +593,7 @@ a.MCHelpControl
 	/* Opera11.10+ */
 	background: -ms-linear-gradient(top, #FFF 0%,#ECECEC 100%);
 	/* IE10+ */
-	background: linear-gradient(top, #FFF 0%,#ECECEC 100%);
+	background: linear-gradient(#FFF 0%,#ECECEC 100%);
 	/* W3C */
 	-pie-background: linear-gradient(#FFF, #ECECEC);
 	/*PIE*/
