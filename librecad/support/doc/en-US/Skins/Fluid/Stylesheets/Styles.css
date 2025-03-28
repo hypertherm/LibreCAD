@@ -232,7 +232,7 @@ ul.navigation > li
 }
 
 ul.navigation li:hover > ul,
-ul.navigation > li.has-children:hover:after,
+ul.navigation > li.is-expanded:after,
 ul.sub-menu.focus-within-expanded
 {
 	visibility: visible;
@@ -341,8 +341,8 @@ nav.title-bar .menu-icon
 	width: 157px;
 	height: 43px;
 	align-self: center;
-	background: transparent url('Images/librecadforProNestHeader.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/librecadforProNestHeader.png') no-repeat center center;
+	background: transparent url('Images/_645259008.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/_645259008.png') no-repeat center center;
 }
 
 .title-bar-container
@@ -552,7 +552,7 @@ html[dir='rtl'] .sidenav-layout
 	background: -webkit-linear-gradient(top, #f5f5f5 0%, transparent 100%);
 	background: -o-linear-gradient(top, #f5f5f5 0%,transparent 100%);
 	background: -ms-linear-gradient(top, #f5f5f5 0%,transparent 100%);
-	background: linear-gradient(top, #f5f5f5 0%,transparent 100%);
+	background: linear-gradient(#f5f5f5 0%,transparent 100%);
 	-pie-background: linear-gradient(#f5f5f5, transparent);
 }
 
@@ -815,7 +815,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -864,7 +864,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -1185,7 +1185,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -1339,7 +1339,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -1494,7 +1494,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -1990,7 +1990,7 @@ h1#results-heading
 	background: -webkit-linear-gradient(top, #f5f5f5 0%, transparent 100%);
 	background: -o-linear-gradient(top, #f5f5f5 0%,transparent 100%);
 	background: -ms-linear-gradient(top, #f5f5f5 0%,transparent 100%);
-	background: linear-gradient(top, #f5f5f5 0%,transparent 100%);
+	background: linear-gradient(#f5f5f5 0%,transparent 100%);
 	-pie-background: linear-gradient(#f5f5f5, transparent);
 }
 

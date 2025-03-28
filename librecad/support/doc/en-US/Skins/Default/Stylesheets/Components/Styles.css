@@ -818,7 +818,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -864,7 +864,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -905,7 +905,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
 	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
-	background: linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
@@ -938,7 +938,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -973,7 +973,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -1016,7 +1016,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -1030,7 +1030,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -1065,7 +1065,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -1100,7 +1100,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -1135,7 +1135,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -1170,7 +1170,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -1205,7 +1205,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -1240,7 +1240,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -1275,7 +1275,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 
@@ -1310,7 +1310,7 @@ div.central-dropdown-content > a:hover
 	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
 	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
 	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
-	background: linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(transparent 0%,transparent 100%);
 	-pie-background: linear-gradient(transparent, transparent);
 }
 

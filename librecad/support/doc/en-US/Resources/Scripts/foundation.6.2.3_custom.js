@@ -843,7 +843,7 @@
 
             //menu.attr('role', 'navigation');
 
-            var items = menu.find('li'),
+            var items = menu.find('li').not(".tree-node-preloaded"),
                 subMenuClass = 'is-' + type + '-submenu',
                 subItemClass = subMenuClass + '-item',
                 hasSubClass = 'is-' + type + '-submenu-parent';
@@ -1620,7 +1620,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     //'aria-multiselectable': this.options.multiOpen
                 //});
 
-                this.$menuLinks = this.$element.find('.is-accordion-submenu-parent');
+                // Task #165273 - exclude .tree-node-preloaded so that the menu can be initialized when everything is properly loaded
+                this.$menuLinks = this.$element.find('.is-accordion-submenu-parent').not(".tree-node-preloaded");
                 this.$menuLinks.each(function () {
                     var linkId = this.id || Foundation.GetYoDigits(6, 'acc-menu-link'),
                         $elem = $(this),
