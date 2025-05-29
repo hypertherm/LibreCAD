@@ -11,8 +11,8 @@ echo #include ^<windows.h^>
 echo LANGUAGE 0x409, 1252
 echo IDI_ICON1               ICON    DISCARDABLE     "librecad.ico"
 echo VS_VERSION_INFO VERSIONINFO
-echo FILEVERSION 2,2,0,%DAILY_BUILD%
-echo PRODUCTVERSION 2,2,0
+echo FILEVERSION 2,2,1,%DAILY_BUILD%
+echo PRODUCTVERSION 2,2,1
 echo BEGIN
 echo     BLOCK "StringFileInfo"
 echo     BEGIN
