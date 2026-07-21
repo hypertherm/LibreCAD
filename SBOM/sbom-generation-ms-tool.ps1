@@ -121,16 +121,31 @@ function Invoke-SyftGenerate {
         [Parameter(Mandatory = $true)][string]$OutputPath
     )
 
+    $sourceUri = "dir:$SourcePath"
     $attempts = @(
-        @('scan', $SourcePath, '-o', "spdx-json=$OutputPath"),
-        @($SourcePath, '-o', "spdx-json=$OutputPath")
+        @('scan', $sourceUri, '-o', 'spdx-json'),
+        @($sourceUri, '-o', 'spdx-json')
     )
 
     $lastExitCode = 1
     foreach ($arguments in $attempts) {
-        & $Command @arguments
+        $result = & $Command @arguments
         $lastExitCode = $LASTEXITCODE
-        if ($lastExitCode -eq 0 -and (Test-Path $OutputPath -PathType Leaf)) {
+        if ($lastExitCode -ne 0) {
+            continue
+        }
+
+        if ($null -eq $result) {
+            continue
+        }
+
+        $content = ($result -join [Environment]::NewLine).Trim()
+        if ([string]::IsNullOrWhiteSpace($content)) {
+            continue
+        }
+
+        Set-Content -Path $OutputPath -Value $content -Encoding utf8
+        if (Test-Path $OutputPath -PathType Leaf) {
             return
         }
     }
