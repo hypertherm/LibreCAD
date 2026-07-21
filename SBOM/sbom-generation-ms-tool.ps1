@@ -3,11 +3,12 @@
 Generates validated SPDX 2.2 and CycloneDX 1.6 SBOMs for LibreCAD for ProNest.
 
 .DESCRIPTION
-Stages only DLL files from the Windows build, generates an SPDX SBOM, enriches each
-DLL with its Windows product or file version, merges repository-maintained SPDX
-manifests from SBOM/AdditionalAspects, validates the aggregate document, and converts
-it to CycloneDX 1.6. When the required command-line tools are not on PATH, the script
-downloads their official Windows x64 release binaries into SBOM/tools.
+Generates an SPDX SBOM for every file in the Windows build, enriches DLL entries
+with their Windows product, file, or managed assembly version when available, merges
+repository-maintained SPDX manifests from SBOM/AdditionalAspects, validates the
+aggregate document, and converts it to CycloneDX 1.6. When the required command-line
+tools are not on PATH, the script downloads their official Windows x64 release
+binaries into SBOM/tools.
 #>
 
 [CmdletBinding()]
@@ -48,7 +49,6 @@ $aggregateSpdxPath = Join-Path $reportsPath 'aggregate-output/spdx_2.2'
 $aggregateManifestPath = Join-Path $aggregateSpdxPath 'manifest.spdx.json'
 $additionalAspectsPath = Join-Path $PSScriptRoot 'AdditionalAspects'
 $validationOutputPath = Join-Path $reportsPath 'aggregate-validation.json'
-$dllBuildPath = Join-Path $reportsPath 'dll-input'
 $toolCachePath = Join-Path $PSScriptRoot 'tools'
 
 function Resolve-SbomToolCommand {
@@ -128,24 +128,15 @@ function Add-SbomRelationship {
     }
 }
 
-function New-DllBuildDrop {
+function Get-DllMetadata {
     param(
-        [Parameter(Mandatory = $true)][string]$SourcePath,
-        [Parameter(Mandatory = $true)][string]$DestinationPath
+        [Parameter(Mandatory = $true)][string]$SourcePath
     )
 
     $dllFiles = @(Get-ChildItem $SourcePath -Filter '*.dll' -File -Recurse | Sort-Object FullName)
-    if ($dllFiles.Count -eq 0) {
-        throw "Build path '$SourcePath' contains no DLL files."
-    }
-
-    New-Item $DestinationPath -ItemType Directory -Force | Out-Null
     $dllMetadata = @()
     foreach ($dllFile in $dllFiles) {
         $relativePath = [System.IO.Path]::GetRelativePath($SourcePath, $dllFile.FullName)
-        $stagedPath = Join-Path $DestinationPath $relativePath
-        New-Item (Split-Path $stagedPath -Parent) -ItemType Directory -Force | Out-Null
-        Copy-Item $dllFile.FullName $stagedPath -Force
 
         $versionInfo = $dllFile.VersionInfo
         $version = @($versionInfo.ProductVersion, $versionInfo.FileVersion) |
@@ -156,14 +147,14 @@ function New-DllBuildDrop {
                 $version = [System.Reflection.AssemblyName]::GetAssemblyName($dllFile.FullName).Version.ToString()
             }
             catch {
-                throw "DLL '$relativePath' has no product, file, or managed assembly version."
+                $version = 'NOASSERTION'
+                Write-Warning "DLL '$relativePath' has no embedded product, file, or managed assembly version; recording versionInfo as NOASSERTION."
             }
         }
 
         $dllMetadata += [pscustomobject]@{
             RelativePath = $relativePath.Replace('\', '/')
             SourcePath = $dllFile.FullName
-            StagedPath = $stagedPath
             Name = $dllFile.Name
             Version = $version.Trim()
             Supplier = if ([string]::IsNullOrWhiteSpace($versionInfo.CompanyName)) {
@@ -179,7 +170,7 @@ function New-DllBuildDrop {
         }
     }
 
-    Write-Host "Staged $($dllMetadata.Count) DLL file(s) for SBOM generation." -ForegroundColor Green
+    Write-Host "Collected version metadata for $($dllMetadata.Count) DLL file(s)." -ForegroundColor Green
     return $dllMetadata
 }
 
@@ -218,7 +209,7 @@ function Add-DllPackageMetadata {
             throw "Generated duplicate SPDX identifier '$packageId' for DLL '$($dll.RelativePath)'."
         }
 
-        $fileSha1 = (Get-FileHash $dll.StagedPath -Algorithm SHA1).Hash.ToLowerInvariant()
+        $fileSha1 = (Get-FileHash $dll.SourcePath -Algorithm SHA1).Hash.ToLowerInvariant()
         $verificationCode = [Convert]::ToHexString(
             [System.Security.Cryptography.SHA1]::HashData(
                 [System.Text.Encoding]::UTF8.GetBytes($fileSha1))).ToLowerInvariant()
@@ -384,14 +375,17 @@ try {
     if (-not (Test-Path $BuildPath -PathType Container)) {
         throw "Build path '$BuildPath' does not exist. Build LibreCAD before generating its SBOM."
     }
+    if (-not (Get-ChildItem $BuildPath -File -Recurse | Select-Object -First 1)) {
+        throw "Build path '$BuildPath' contains no files."
+    }
     if (Test-Path $reportsPath) {
         Remove-Item $reportsPath -Recurse -Force
     }
     New-Item $reportsPath -ItemType Directory -Force | Out-Null
-    $dllMetadata = @(New-DllBuildDrop -SourcePath $BuildPath -DestinationPath $dllBuildPath)
+    $dllMetadata = @(Get-DllMetadata -SourcePath $BuildPath)
 
     $generateArguments = @(
-        'generate', '-b', $dllBuildPath, '-bc', $repositoryRoot,
+        'generate', '-b', $BuildPath, '-bc', $repositoryRoot,
         '-pn', $ProductName, '-pv', $ProductVersion, '-ps', $ProductSupplier,
         '-nsb', 'https://hypertherm.com/sbom', '-m', $reportsPath,
         '-mi', 'SPDX:2.2', '-li', 'true'
@@ -425,7 +419,7 @@ try {
     New-Item $aggregateSpdxPath -ItemType Directory -Force | Out-Null
     $aggregate | ConvertTo-Json -Depth 100 | Set-Content $aggregateManifestPath -Encoding utf8
 
-    & $sbomCommand validate -b $dllBuildPath -m (Split-Path $aggregateSpdxPath -Parent) -mi 'SPDX:2.2' -im -o $validationOutputPath
+    & $sbomCommand validate -b $BuildPath -m (Split-Path $aggregateSpdxPath -Parent) -mi 'SPDX:2.2' -im -o $validationOutputPath
     $validationExitCode = $LASTEXITCODE
     if (-not (Test-Path $validationOutputPath -PathType Leaf)) {
         throw "Microsoft SBOM Tool did not create a validation report (exit code $validationExitCode)."
