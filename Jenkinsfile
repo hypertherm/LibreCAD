@@ -75,7 +75,7 @@ pipeline
 			{
 				always
 				{
-					bat 'pwsh -NoProfile -Command "$zip = Join-Path $env:WORKSPACE \'windows-artifacts.zip\'; if (Test-Path $zip) { Remove-Item $zip -Force }; if (Test-Path (Join-Path $env:WORKSPACE \'windows\')) { Compress-Archive -Path (Join-Path $env:WORKSPACE \'windows\\*\') -DestinationPath $zip -Force }"'
+					bat 'powershell -NoProfile -Command "$zip = Join-Path $env:WORKSPACE \'windows-artifacts.zip\'; if (Test-Path $zip) { Remove-Item $zip -Force }; if (Test-Path (Join-Path $env:WORKSPACE \'windows\')) { Compress-Archive -Path (Join-Path $env:WORKSPACE \'windows\\*\') -DestinationPath $zip -Force }"'
 					archiveArtifacts allowEmptyArchive: true, artifacts: 'SBOM/reports/aggregate-output/spdx_2.2/*.json, windows-artifacts.zip'
 				}
 			}
