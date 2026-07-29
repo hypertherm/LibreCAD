@@ -126,16 +126,67 @@ function Invoke-SyftGenerate {
         @($SourcePath, '-o', "spdx-json=$OutputPath")
     )
 
-    $lastExitCode = 1
-    foreach ($arguments in $attempts) {
-        & $Command @arguments
-        $lastExitCode = $LASTEXITCODE
-        if ($lastExitCode -eq 0 -and (Test-Path $OutputPath -PathType Leaf)) {
-            return
+    function Test-SpdxManifest {
+        param([Parameter(Mandatory = $true)][string]$Path)
+
+        if (-not (Test-Path $Path -PathType Leaf)) {
+            return $false
+        }
+
+        try {
+            $manifest = Get-Content $Path -Raw | ConvertFrom-Json -AsHashtable
+            return $manifest.ContainsKey('SPDXID') -and $manifest.ContainsKey('packages')
+        }
+        catch {
+            return $false
         }
     }
 
-    throw "Syft failed to generate an SPDX manifest (exit code $lastExitCode)."
+    function Wait-ForSpdxManifest {
+        param(
+            [Parameter(Mandatory = $true)][string]$Path,
+            [int]$Retries = 5,
+            [int]$DelayMilliseconds = 300
+        )
+
+        for ($i = 0; $i -lt $Retries; $i++) {
+            if (Test-SpdxManifest -Path $Path) {
+                return $true
+            }
+            Start-Sleep -Milliseconds $DelayMilliseconds
+        }
+        return $false
+    }
+
+    $lastExitCode = 1
+    $attemptErrors = @()
+    foreach ($arguments in $attempts) {
+        if (Test-Path $OutputPath -PathType Leaf) {
+            Remove-Item $OutputPath -Force
+        }
+
+        $output = & $Command @arguments 2>&1
+        $lastExitCode = $LASTEXITCODE
+
+        if ($lastExitCode -eq 0 -and (Wait-ForSpdxManifest -Path $OutputPath)) {
+            return
+        }
+
+        if ($lastExitCode -ne 0 -and (Wait-ForSpdxManifest -Path $OutputPath)) {
+            Write-Warning "Syft returned exit code $lastExitCode, but a valid SPDX manifest was generated. Continuing."
+            return
+        }
+
+        $attemptErrors += @(
+            "Args: $($arguments -join ' ')",
+            "ExitCode: $lastExitCode",
+            "Output:",
+            (($output | Out-String).Trim())
+        )
+    }
+
+    $details = ($attemptErrors -join [Environment]::NewLine)
+    throw "Syft failed to generate a valid SPDX manifest (exit code $lastExitCode).$([Environment]::NewLine)$details"
 }
 
 function Invoke-SbomCommand {
