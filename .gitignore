@@ -93,3 +93,5 @@ core.*
 *.vcxproj
 *.vcxproj.filters
 *.sln
+
+SBOM/reports/
