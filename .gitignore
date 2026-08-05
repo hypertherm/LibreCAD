@@ -94,4 +94,6 @@ core.*
 *.vcxproj.filters
 *.sln
 
+# Generated Software Bill of Materials reports
 SBOM/reports/
+SBOM/tools/
