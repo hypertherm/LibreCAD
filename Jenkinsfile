@@ -14,14 +14,40 @@ pipeline
 		  }
 		}
 
+		stage('Build') {
+			agent {
+				label 'librecad'
+			}
+			steps 
+			{
+				bat 'SET'
+				deleteDir()
+				unstash 'source'
+				script
+				{
+					def LibreCAD = load 'LibreCAD.groovy'
+					LibreCAD.Build()
+					stash includes: '/**/*.exe', name: 'build_files'
+				}
+			}
+			post
+			{
+				always
+				{
+					archiveArtifacts allowEmptyArchive: true, artifacts: '/**/*.exe'
+				}
+			}
+		}
+
 		stage('Install Tools') {
 			agent {
 				label 'librecad'
 			}
 			steps {
 				bat 'SET'
-				script {
-					writeFile file: 'Install-RequiredTools.ps1', text: '''
+				catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+					script {
+						writeFile file: 'Install-RequiredTools.ps1', text: '''
 $ErrorActionPreference = 'Stop'
 
 function Add-WingetLinkPath {
@@ -79,32 +105,8 @@ Install-ToolIfMissing -Command 'sbom-tool' -WingetIds @('Microsoft.SbomTool', 'M
 Install-ToolIfMissing -Command 'cyclonedx' -WingetIds @('CycloneDX.cyclonedx-cli')
 Install-ToolIfMissing -Command 'cdxgen' -WingetIds @('CycloneDX.cdxgen')
 '''
-					bat 'powershell -NoProfile -ExecutionPolicy Bypass -File .\\Install-RequiredTools.ps1'
-				}
-			}
-		}
-
-		stage('Build') {
-			agent {
-				label 'librecad'
-			}
-			steps 
-			{
-				bat 'SET'
-				deleteDir()
-				unstash 'source'
-				script
-				{
-					def LibreCAD = load 'LibreCAD.groovy'
-					LibreCAD.Build()
-					stash includes: '/**/*.exe', name: 'build_files'
-				}
-			}
-			post
-			{
-				always
-				{
-					archiveArtifacts allowEmptyArchive: true, artifacts: '/**/*.exe'
+						bat 'powershell -NoProfile -ExecutionPolicy Bypass -File .\\Install-RequiredTools.ps1'
+					}
 				}
 			}
 		}
@@ -201,7 +203,7 @@ Install-ToolIfMissing -Command 'cdxgen' -WingetIds @('CycloneDX.cdxgen')
 		VERSION_BUILD = getVersionBuild()
 		INSTALLER_TYPE = getInstallerType()
 		RECIPIENTS = 'mtcprogramming, steven.bertken, chris.pollard'
-		VERSION_FULL = "2.2.1.${VERSION_BUILD}"
+		VERSION_FULL = "2.2.0.${VERSION_BUILD}"
 		TARGET_PLATFORM = '32-bit'
 		BUILD_DISPLAY_NAME = getDisplayName()
 	}
