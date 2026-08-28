@@ -186,5 +186,5 @@ def CreateNetworkPathForInstaller()
 	else
 		installerType = ' ' + installerType + ' '
 	
-	return  '\\\\cam-issvr\\installations\\built by jenkins\\LibreCAD' + installerType +' (' + env.TARGET_PLATFORM + ')\\' + env.BRANCH_NAME + '\\' + "${currentBuild.number}" + '\\'
+	return  '%DEVCOMMON_FOLDER%\\built by jenkins\\LibreCAD' + installerType +' (' + env.TARGET_PLATFORM + ')\\' + env.BRANCH_NAME + '\\' + "${currentBuild.number}" + '\\'
 }
